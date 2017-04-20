@@ -15,8 +15,8 @@
 
 ARGS=`getopt -o ab:c:: --long along,blong:,clong:: 'example.sh' -- "$@"`
 if [ $? != 0 ]; then
-		echo "Terminating..."
-		exit 1
+        echo "Terminating..."
+        exit 1
 fi
 
 #echo $ARGS
@@ -26,40 +26,40 @@ eval set -- "${ARGS}"
 
 while true
 do
-		case "$1" in
-				-a|--along)
-						echo "Option a"
-						shift
-						;;
-				-b|--blong)
-						echo "Option b, argument $2"
-						shift 2
-						;;
-				-c|--clong)
-						case "$2" in
-								"")
-										echo "Option c, no argument"
-										shift 2
-										;;
-								*)
-										echo "Option c, argument $2"
-										shift 2
-										;;
-						esac;;
-				--)
-						shift
-						break
-						;;
-				*)
-						echo "Internal error"
-						exit 1
-						;;
-		esac
+        case "$1" in
+                -a|--along)
+                        echo "Option a"
+                        shift
+                        ;;
+                -b|--blong)
+                        echo "Option b, argument $2"
+                        shift 2
+                        ;;
+                -c|--clong)
+                        case "$2" in
+                                "")
+                                        echo "Option c, no argument"
+                                        shift 2
+                                        ;;
+                                *)
+                                        echo "Option c, argument $2"
+                                        shift 2
+                                        ;;
+                        esac;;
+                --)
+                        shift
+                        break
+                        ;;
+                *)
+                        echo "Internal error"
+                        exit 1
+                        ;;
+        esac
 done
 
 # 处理剩余的参数
 for arg in $@
 do 
-		echo "Processing $arg"
+        echo "Processing $arg"
 done
 

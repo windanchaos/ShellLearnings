@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./cmd_getopt_basic.sh type target.zip package.zip
+
 if [ $# -lt 1 ]; then
 		echo "Error, need args."
 		exit 1
