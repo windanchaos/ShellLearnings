@@ -3,6 +3,9 @@
 # Linux / UNIX Desktop Fun: Terminal ASCII Aquarium
 # https://www.cyberciti.biz/tips/linux-unix-apple-osx-terminal-ascii-aquarium.html
 
+# ASCIIQuarium
+# www.robobunny.com/projects/asciiquarium/html
+
 # Install Term::Animation
 sudo apt-get install libcurses-perl
 cd ~/Documents/ShellProjects/asciiquarium
