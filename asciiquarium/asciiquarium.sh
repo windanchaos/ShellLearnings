@@ -4,7 +4,11 @@
 # https://www.cyberciti.biz/tips/linux-unix-apple-osx-terminal-ascii-aquarium.html
 
 # ASCIIQuarium
-# www.robobunny.com/projects/asciiquarium/html
+# www.robobunny.com/projects/asciiquarium/html/
+
+# Screenshot
+#wget www.robobunny.com/projects/asciiquarium/screenshot.png
+#display screenshot.png 2> /dev/null
 
 # Install Term::Animation
 sudo apt-get install libcurses-perl

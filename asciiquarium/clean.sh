@@ -9,3 +9,8 @@ if [ -d Term-Animation-2.4 ]; then
 	echo "rm -rf Term-Animation-2.4/"
 	rm -rf Term-Animation-2.4/
 fi
+
+if [ -f "screenshot.png" ]; then
+	#echo "rm screenshot.png"
+	rm -i screenshot.png
+fi
