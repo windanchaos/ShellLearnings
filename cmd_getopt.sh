@@ -27,6 +27,7 @@ eval set -- "${ARGS}"
 while true
 do
         case "$1" in
+
                 -a|--along)
                         echo "Option a"
                         shift
