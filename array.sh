@@ -14,6 +14,7 @@ echo "\${friends[1]}=${friends[1]}"
 # 获取数组的第三个元素
 echo "\${friends[2]}=${friends[2]}"
 # 获取数组的长度，即数组元素的个数
+
 echo "\${#friends[*]}=${#friends[*]}"
 echo "\${#friends[@]}=${#friends[@]}"
 # 获取数组第一个元素的长度
@@ -22,3 +23,10 @@ echo "\${#friends[0]}=${#friends[0]}"
 echo "\${#friends[1]}=${#friends[1]}"
 # 获取数组第三个元素的长度
 echo "\${#friends[2]}=${#friends[2]}"
+
+# 切片方式获取内容
+echo "\${friends[@]:1:2}=${friends[@]:1:2}"
+# 从第二个元素开始
+echo "\${friends[@]:2}=${friends[2]:2}"
+# 到第二个元素为止
+echo "\${friends[@]::2}=${friends[@]::2}"
