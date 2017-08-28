@@ -5,8 +5,8 @@ function dots() {
 	seconds=${1:-5}
 	while true
 	do
-			sleep $seconds
-			echo -n '.'
+		sleep $seconds
+		echo -n '.'
 	done
 }
 
