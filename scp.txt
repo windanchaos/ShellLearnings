@@ -1,0 +1,22 @@
+linux 的 scp 命令 可以 在 linux 之间复制 文件 和 目录； 
+
+================== 
+scp 命令 
+================== 
+scp 可以在 2个 linux 主机间复制文件； 
+
+命令基本格式： 
+       scp [可选参数] file_source file_target 
+
+=================
+从 本地 复制到 远程 
+================= 
+* 复制文件： 
+        * 命令格式： 
+                scp local_file remote_username@remote_ip:remote_folder 
+                或者 
+                scp local_file remote_username@remote_ip:remote_file 
+                或者 
+                scp local_file remote_ip:remote_folder 
+                或者 
+                scp local_file remote_ip:remote_file 
