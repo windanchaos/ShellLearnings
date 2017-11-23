@@ -1,0 +1,5 @@
+window下cmd
+运行
+dos2unix test.file
+
+原因：Unix体系里，每行结尾只有“<换行>”，即“\n”；Windows体系里面，每行结尾是“<换行><回 车>”，即“\n\r”。一个直接结果是，Unix体系下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix下打开的话，在每行的结尾可能会多出一个^M符号。
